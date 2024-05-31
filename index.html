@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/fontsawesome/css/all.min.css">
+    <script type="text/javascript" src="js/jquery-min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+
+    <link rel="stylesheet" href="CSS/heroPage.css">
+    <link rel="stylesheet" href="CSS/secondHeroPage.css">
+</head>
+
+<body>
+    <style>
+        .navbar {
+            height: 5rem;
+            background-color: #002E63;
+        }
+
+        #offcanvasNavbar {
+            width: 15rem;
+        }
+
+        .inline {
+            display: inline-block
+        }
+
+        .center-text {
+            text-align: center;
+            font-family: 'Bebas Neue', sans-serif;
+            color: #F2F2F2;
+            letter-spacing: 3px;
+            margin-right: 5px;
+            margin-top: 7px;
+        }
+    </style>
+
+
+    <nav class="navbar sticky-top shadow">
+        <div class="container-fluid">
+            <button class="navbar-toggler ml-5 border-0 shadow bg-dark" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
+                style="margin-left:15px;">
+                <div class=" text-light p-2 ">
+                    <i class="fa-solid fa-bars fa-xl"></i>
+                </div>
+            </button>
+
+            <div>
+                <div class="col-md-12 center-text">
+                    <h1 class="center-text"> Computer Graphics Activities
+                    </h1>
+                </div>
+            </div>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header bg-body-tertiary">
+                    <h3 id="lblName" class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">Gio Salceda</h3>
+                </div>
+
+                <div class="offcanvas-body">
+                    <!-- navigation side bar buttons -->
+                    <ul class=" navbar-nav justify-content-end flex-grow-1 pe-3" role="tablist">
+
+
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" aria-current="page" href="index.html" type="button" role="tab"
+                                aria-controls="pills-home" aria-selected="true">
+                                <!-- ICON -->
+                                <i class="fa-solid fa-house fa-lg"></i>
+                                <span style="margin-left:10px;">Home</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" aria-current="page" href="Salceda_Activity1.html" type="button"
+                                role="tab" aria-controls="pills-home" aria-selected="true">
+                                <i class="fa-solid fa-thumbtack fa-lg"></i>
+                                <span style="margin-left:10px;">Activity 1.1</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" aria-current="page" href="Salceda_Activity1.2.html" type="button"
+                                role="tab" aria-controls="pills-home" aria-selected="true">
+                                <i class="fa-solid fa-thumbtack fa-lg"></i>
+                                <span style="margin-left:10px;">Activity 1.2</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" aria-current="page" href="Salceda_Activity1.3.html" type="button"
+                                role="tab" aria-controls="pills-home" aria-selected="true">
+                                <i class="fa-solid fa-thumbtack fa-lg"></i>
+                                <span style="margin-left:10px;">Activity 1.3</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" aria-current="page" href="Salceda_Activity2.1.html" type="button"
+                                role="tab" aria-controls="pills-home" aria-selected="true">
+                                <i class="fa-solid fa-thumbtack fa-lg"></i>
+                                <span style="margin-left:10px;">Activity 2.1</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" aria-current="page" href="Salceda_Activity2.2.html" type="button"
+                                role="tab" aria-controls="pills-home" aria-selected="true">
+                                <i class="fa-solid fa-thumbtack fa-lg"></i>
+                                <span style="margin-left:10px;">Activity 2.2</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" aria-current="page" href="Salceda_Activity2.3.html" type="button"
+                                role="tab" aria-controls="pills-home" aria-selected="true">
+                                <i class="fa-solid fa-thumbtack fa-lg"></i>
+                                <span style="margin-left:10px;">Activity 2.3</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO PAGE -->
+    <div class="webpage">
+        <div class="left1">
+            <div>
+                <h3 id="portfolio">PORTFOLIO</h3>
+            </div>
+
+            <div class="nameBlock">
+                <h1 id="withoutFill">HEY! I'M GIO <span id="withFill">HEY! I'M GIO</span> HEY! I'M GIO</h1>
+            </div>
+
+
+            <div class="lineBlock">
+                <img id="lines" src="images/LINES.png">
+            </div>
+        </div>
+
+        <div class="imageBlock">
+            <img id="cirles" src="images/circles.png">
+        </div>
+    </div>
+
+    <!-- SECOND PAGE -->
+    <div class="secondPage">
+
+        <div class=" upperContainer">
+
+            <!-- upper left container -->
+            <div class="upperLeftContainer">
+                <!-- 1st div -->
+                <div class="left2_1">
+                    <div class="text2Block1">
+                        <h1>SHOWING YOU</h1>
+                    </div>
+
+                    <div class="image2Block1">
+                        <img id="eye1" src="images/EYE1.png">
+                    </div>
+                </div>
+
+                <!-- 2nd div -->
+                <div class="left2_2">
+                    <div class="image2Block2">
+                        <img id="eye2" src="images/EYE2.png">
+                    </div>
+
+                    <div class="text2Block2">
+                        <h1>MY CREATIVE</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- upper right container -->
+            <div class="upperRightContainer">
+                <img id="act1dot2" src="images/Act1.2.png">
+            </div>
+        </div>
+
+
+
+        <div class="lowerContainer">
+            <!-- lowwer left container -->
+            <div class="lowerLeftContainer">
+                <div class="text2Block3">
+                    <h1>SIDE.</h1>
+                </div>
+
+                <div class="image2Block3">
+                    <img id="eye3" src="images/EYE3.png">
+                </div>
+            </div>
+
+            <div class="lowerContainerImage1">
+                <img id="act2dot3" src="images/Act2.3.png">
+            </div>
+
+            <div class="lowerContainerImage2">
+                <img id="act1dot3" src="images/Act1.3.png">
+            </div>
+
+            <div class="lowerContainerImage3">
+                <img id="act2dot2" src="images/Act2.2.png">
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+
+
+
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+</html>

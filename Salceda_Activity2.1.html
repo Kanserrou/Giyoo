@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/fontsawesome/css/all.min.css">
+    <script type="text/javascript" src="js/jquery-min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+</head>
+
+<body>
+    <style>
+        .navbar {
+            height: 5rem;
+            background-color: #002E63;
+        }
+
+        #offcanvasNavbar {
+            width: 15rem;
+        }
+
+        .inline {
+            display: inline-block
+        }
+
+        .center-text {
+            text-align: center;
+            font-family: 'Bebas Neue', sans-serif;
+            color: #F2F2F2;
+            letter-spacing: 3px;
+            margin-right: 5px;
+            margin-top: 7px;
+        }
+        
+        #canvas {
+            border: 1px solid black
+        }
+    </style>
+
+
+    <nav class="navbar sticky-top shadow">
+        <div class="container-fluid">
+            <button class="navbar-toggler ml-5 border-0 shadow bg-dark" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
+                style="margin-left:15px;">
+                <div class=" text-light p-2 ">
+                    <i class="fa-solid fa-bars fa-xl"></i>
+                </div>
+            </button>
+
+            <div>
+                <div class="col-md-12 center-text">
+                    <h1 class="center-text"> Computer Graphics Activities
+                    </h1>
+                </div>
+            </div>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header bg-body-tertiary">
+                    <h3 id="lblName" class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">Gio Salceda</h3>
+                </div>
+
+                <div class="offcanvas-body">
+                    <!-- navigation side bar buttons -->
+                    <ul class=" navbar-nav justify-content-end flex-grow-1 pe-3" role="tablist">
+
+
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" aria-current="page" href="index.html" type="button" role="tab"
+                                aria-controls="pills-home" aria-selected="true">
+                                <i class="fa-solid fa-house fa-lg"></i>
+                                <span style="margin-left:10px;">Home</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" aria-current="page" href="Salceda_Activity1.html" type="button"
+                                role="tab" aria-controls="pills-home" aria-selected="true">
+                                <i class="fa-solid fa-thumbtack fa-lg"></i>
+                                <span style="margin-left:10px;">Activity 1.1</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" aria-current="page" href="Salceda_Activity1.2.html" type="button"
+                                role="tab" aria-controls="pills-home" aria-selected="true">
+                                <i class="fa-solid fa-thumbtack fa-lg"></i>
+                                <span style="margin-left:10px;">Activity 1.2</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" aria-current="page" href="Salceda_Activity1.3.html" type="button"
+                                role="tab" aria-controls="pills-home" aria-selected="true">
+                                <i class="fa-solid fa-thumbtack fa-lg"></i>
+                                <span style="margin-left:10px;">Activity 1.3</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" aria-current="page" href="Salceda_Activity2.1.html" type="button"
+                                role="tab" aria-controls="pills-home" aria-selected="true">
+                                <i class="fa-solid fa-thumbtack fa-lg"></i>
+                                <span style="margin-left:10px;">Activity 2.1</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" aria-current="page" href="Salceda_Activity2.2.html" type="button"
+                                role="tab" aria-controls="pills-home" aria-selected="true">
+                                <i class="fa-solid fa-thumbtack fa-lg"></i>
+                                <span style="margin-left:10px;">Activity 2.2</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" aria-current="page" href="Salceda_Activity2.3.html" type="button"
+                                role="tab" aria-controls="pills-home" aria-selected="true">
+                                <i class="fa-solid fa-thumbtack fa-lg"></i>
+                                <span style="margin-left:10px;">Activity 2.3</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <center>
+        <canvas id="canvas" width="500" height="500"></canvas>
+        <br>
+        <br>
+        <input type="number" id="xpos" placeholder="X">
+        <br>
+        <br>
+        <input type="number" id="ypos" placeholder="Y">
+        <br>
+        <br>
+        <input type="number" id="width" placeholder="width">
+        <br>
+        <br>
+        <input type="number" id="height" placeholder="height">
+        <br>
+        <br>
+        <input type="color" id="color" onclick="Color()" value="">
+        <input type="button" onclick="ChangeBGColor()" value="Change Canvas Color">
+        <input type="button" onclick="StrokeRectangle()" value="Generate Stroke Rectangle">
+        <input type="button" onclick="FillRectangle()" value="Generate Fill Rectangle">
+        <input type="button" onclick="ClearRect()" value="Clear Rectangle">
+        <input type="button" onclick="ClearAll()" value="Clear All">
+    </center>
+
+    <script>
+        var canvas = document.getElementById('canvas');
+        var ctx = canvas.getContext('2d');
+
+        var color;
+
+        function Color() {
+            color = $("#color").val();
+        }
+
+        function ChangeBGColor() {
+            Color();
+            $("#canvas").css("background-color", color);
+        }
+
+        function StrokeRectangle() {
+            Color();
+            var x = $("#xpos").val();
+            var y = $("#ypos").val();
+            var width = $("#width").val();
+            var height = $("#height").val();
+
+            ctx.beginPath();
+            ctx.strokeStyle = color;
+            ctx.strokeRect(x, y, width, height);
+
+            //ctx.stroke();
+        }
+
+        function FillRectangle() {
+            Color();
+            var x = $("#xpos").val();
+            var y = $("#ypos").val();
+            var width = $("#width").val();
+            var height = $("#height").val();
+
+            ctx.beginPath();
+            ctx.fillStyle = color;
+            ctx.fillRect(x, y, width, height);
+
+        }
+
+        function ClearRect() {
+            var x = $("#xpos").val();
+            var y = $("#ypos").val();
+            var width = $("#width").val();
+            var height = $("#height").val();
+
+
+            ctx.beginPath();
+            ctx.clearRect(x, y, width, height);
+
+        }
+
+        function ClearAll() {
+            ctx.beginPath();
+            ctx.clearRect(0, 0, 500, 500);
+        }
+    </script>
+</body>
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+</html>
